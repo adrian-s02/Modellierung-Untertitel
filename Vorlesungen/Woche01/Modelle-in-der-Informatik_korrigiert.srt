@@ -15,7 +15,7 @@ Also, warum gibt es überhaupt
 diese Modellierungsvorlesung
 
 00:00:21,960 --> 00:00:27,120
-im Rahmen von Informatik- oder
+im Rahmen von Informatik oder
 informatiknahen Studiengängen?
 
 00:00:27,120 --> 00:00:32,100
@@ -431,7 +431,7 @@ Was Sie hier sehen, sind
 natürlich auch nur Modelle.
 
 00:08:20,740 --> 00:08:23,890
-Also vielleicht wird niemand genau so vorgehen.
+Also vielleicht wird niemand exakt so vorgehen.
 
 00:08:23,890 --> 00:08:28,900
 Was wir sehen und gesehen haben, sind letztlich
@@ -562,7 +562,7 @@ zu überprüfen, ob das System den Zweck erfüllt.
 
 00:10:59,950 --> 00:11:03,250
 Und das muss vom Zweck abhängen,
-und ist gar nicht unbedingt klar,
+und der ist gar nicht unbedingt klar,
 
 00:11:03,250 --> 00:11:06,010
 wenn das System erst noch entworfen wird.
@@ -621,7 +621,7 @@ Das wird nicht im Vordergrund
 stehen, nicht den Hauptteil
 
 00:11:51,700 --> 00:11:56,230
-der Vorlesung ausmachen, aber es wird aufscheinen.
+der Vorlesung ausmachen, aber es wird auftauchen.
 
 00:11:56,230 --> 00:11:58,960
 Und natürlich in anderem Kontext,
@@ -865,7 +865,7 @@ Natürlich ist es so, dass wir
 uns in der Lehrveranstaltung
 
 00:16:22,000 --> 00:16:27,400
-(zur Übersichtlichkeit/Didaktik der Vermittlung)
+zur Übersichtlichkeit/Didaktik der Vermittlung
 vor allem mit kleinen Modellen befassen werden.
 
 00:16:28,810 --> 00:16:30,040
