@@ -635,7 +635,7 @@ wegen des dualen Wellen-/Teilchencharakters
 auch nicht so einfach ist, sich diese Elektronen
 
 00:10:49,480 --> 00:10:52,360
-einfach an bestimmten Positionen hängend
+als einfach an bestimmten Positionen hängend
 vorzustellen.
 
 00:10:52,360 --> 00:10:58,170
@@ -788,7 +788,7 @@ nennen, offenbar für Säureaustauschzyklus/-prozesse.
 Produkte werden umgewandelt.
 
 00:13:24,620 --> 00:13:28,720
-Es gibt hier auch irgendwelche Informationen
+Es gibt hier auch irgendwelche Formeln auch
 dafür, in welcher Zusammensetzung, in welchem
 
 00:13:28,720 --> 00:13:33,670
@@ -832,7 +832,7 @@ an den beiden Beispielen davor, ist
 
 00:14:11,731 --> 00:14:18,440
 dass hier sehr viel mit visuellem und grafischem
-Transport und Information gearbeitet wird.
+Transport von Information gearbeitet wird.
 
 00:14:18,440 --> 00:14:20,530
 Das muss natürlich nicht immer so sein.
@@ -861,8 +861,8 @@ Natürlich kann man auch mit eher textuellen
 Mitteln, dann zum Beispiel verbalen Beschreibungen
 
 00:14:41,040 --> 00:14:44,980
-oder mathematischen Formeln, die auch in einer
-Art Kontext sind, modellieren.
+oder mathematischen Formeln, die auch eine
+Art von Text sind, modellieren.
 
 00:14:44,980 --> 00:14:50,410
 Das wären dann mathematische Modelle, die
@@ -1469,22 +1469,22 @@ auf der gewünschten Modellierungsstufe.
 
 00:25:16,090 --> 00:25:23,120
 Und wir werden in der Vorlesung formale Modelle
-sehen, insbesondere im Petrinetz-Teil (das
+sehen, insbesondere im Petrinetz-Teil, das
 
 00:25:23,120 --> 00:25:28,340
 ist ein typisches recht formales Modell, eine
-formale Modellierungsnotation).
+formale Modellierungsnotation.
 
 00:25:28,340 --> 00:25:34,840
 Aber ein Großteil der Vorlesung wird sich
 eher im Bereich semi-formaler Modelle bewegen.
 
 00:25:34,840 --> 00:25:39,669
-Also UML (diese Modellierungssprache aus dem
+Also UML, diese Modellierungssprache aus dem
 Software Engineering, die ich schon zumindest
 
 00:25:39,669 --> 00:25:48,000
-im Literaturteil erwähnt habe), das ist ein
+im Literaturteil erwähnt habe, das ist ein
 klassisches Beispiel für semi-formale Modellierung.
 
 00:25:48,000 --> 00:25:54,789
