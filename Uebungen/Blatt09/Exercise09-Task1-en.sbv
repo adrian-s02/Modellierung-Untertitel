@@ -1,251 +1,275 @@
-0:00:00.840,0:00:08.820
-Exercise sheet number ten, task number one.
-This is similar to the task from last week.
+0:00:03.750,0:00:08.250
+This task is about causality in Petri nets.
 
-0:00:08.820,0:00:15.600
-The difference is that here we have the Petri
-net and we need to make the reachability graph
+0:00:08.250,0:00:18.869
+And we have been given two Petri nets and
+we shall indicate the conditions of all transitions
 
-0:00:16.380,0:00:23.820
-ourselves. Then we have to indicate which
-properties hold for the Petri net. Just
+0:00:18.869,0:00:23.090
+according to the definition of causality.
 
-0:00:23.820,0:00:31.320
-like last week, we have these two tables with the
-properties and we have to provide justification.
+0:00:23.090,0:00:36.590
+And therefore, I just create a little table
+where we have all the transitions and so in
 
-0:00:33.360,0:00:38.760
-Let's start creating the reachability graph.
-The reachability graph is going to consist of
+0:00:36.590,0:00:44.950
+the first case, these are for transitions
+for Petri net N1.
 
-0:00:38.760,0:00:45.840
-tuples with three components, just like this
-one. The first one is going to represent s1.
+0:00:44.950,0:01:03.700
+This is for Petri net N1, and then we have
+the causalities on the right-hand side.
 
-0:00:45.840,0:00:49.740
-The second one is going to represent s2.
-The third one is going to represent s3.
+0:01:03.700,0:01:14.299
+Left are the transitions and right are the
+causalities.
 
-0:00:53.160,0:00:59.580
-So we have tokens in s1 and s2. This is why
-we start with this tuple. One token here,
+0:01:14.299,0:01:22.840
+I do not have enough space for the heading
+now because I draw it up here, but so left
 
-0:00:59.580,0:01:05.820
-one token here. Of course, don't forget about this
-arrow that indicates that this is where we start.
+0:01:22.840,0:01:29.830
+is the transitions and on the right side,
+there shall be the causalities.
 
-0:01:07.020,0:01:14.580
-Let's try firing the first transition, the
-transition t1. So we have a token here. This
+0:01:29.830,0:01:38.840
+And when we start with the first transition,
+then we can check here, can we fire t1?
 
-0:01:14.580,0:01:24.060
-means it's possible. If we fire it, we reach
-this marking. Also you can fire t2 to go back
+0:01:38.840,0:01:48.540
+We require token in s1 and we require token
+in s2 and therefore we do not require to fire
 
-0:01:24.060,0:01:33.660
-from this marking to the first marking, because t2
-requires a token in s2, and we have tokens in s2.
+0:01:48.540,0:01:52.939
+any other transition, so we can fire t1 right
+away.
 
-0:01:36.000,0:01:41.040
-From the first marking, you can also
-fire t2 and you reach this marking
+0:01:52.939,0:01:58.000
+That's why we can have just the empty set
+here for t1.
 
-0:01:41.040,0:01:53.040
-because you have the requirement for t2, which is
-a token in s2. Also, you can go back by firing t1.
+0:01:58.000,0:02:08.560
+For t2, we require one token in s1, which
+we have, that's why t2 has also no causalities
 
-0:01:53.760,0:02:02.700
-The same, you have the required tokens
-for t1, which is just one token in s1.
+0:02:08.560,0:02:12.360
+on empty set for the-.
 
-0:02:05.220,0:02:17.340
-Let's try firing t3 from this first marking.
-For t3, what's required is a token in s1. Yes,
+0:02:12.360,0:02:27.269
+And t3 requires two tokens in s2, but there
+is only one token, and the only way of getting
 
-0:02:17.340,0:02:25.080
-we have that. Then we'll reach this
-marking. Firing t4 gives us this marking.
+0:02:27.269,0:02:31.780
+a token into s2 is by firing t2.
 
-0:02:26.100,0:02:36.900
-What does t4 require? It requires a token in
-s2. Yes, we have that here. If you fire t4
+0:02:31.780,0:02:39.140
+And we can fire t2 because there is a token
+in t2.
 
-0:02:37.500,0:02:45.120
-while you have this marking, it is possible
-because t4 requires tokens in s2. We have that.
+0:02:39.140,0:02:48.900
+That means, at any point in time, we have
+to fire t2 before we can fire t3, but we do
 
-0:02:46.380,0:02:52.200
-Then you reach this marking, which already
-exists, reachable from this way here.
+0:02:48.900,0:03:03.780
+not have to fire anything else so we have
+just this set of t2, which is the precondition,
 
-0:02:53.520,0:02:59.460
-Also with this marking, you can fire
-t3 because you have the required
+0:03:03.780,0:03:12.730
+the necessary condition, which we add here
+for t3.
 
-0:02:59.460,0:03:10.260
-token in s1. Then you reach the already existing
-marking (1,0,1). Between these two markings,
+0:03:12.730,0:03:24.080
+And then to find out the necessary conditions
+for t4, we look at what t4 requires.
 
-0:03:10.260,0:03:20.040
-you can go back and forth because t1 and t2
-will have the required tokens. So here for t1,
+0:03:24.080,0:03:30.560
+t4 requires a token in s3, which there is.
 
-0:03:20.040,0:03:26.220
-you need a token in s1. You have that already. For
-t2 you need a token in s2, and you have that here.
+0:03:30.560,0:03:40.000
+Again, the necessary condition for t4 would
+be
 
-0:03:28.920,0:03:37.860
-From this marking, you can fire t4 because
-t4 requires a token in s2, which we have,
+0:03:40.000,0:03:43.420
+the empty set.
 
-0:03:38.880,0:03:44.580
-and you reach this marking (0,0,2).
-Finally, you can go from
+0:03:43.420,0:03:51.989
+And now we are done with the first net and
+we can do the same thing with the second net.
 
-0:03:44.580,0:03:51.660
-this marking to this marking by firing t3,
-because you have the required token in s1.
+0:03:51.989,0:04:02.060
+And now I write the headings down as well
+as we have transitions on the left-hand side
 
-0:03:55.140,0:04:03.120
-So how do we know that we are done with the
-reachability graph? So far all of these steps,
+0:04:02.060,0:04:06.260
+and on the right-hand side
 
-0:04:03.120,0:04:11.160
-everything that I did here, is correct, for
-sure, because we only fired a transition
+0:04:06.260,0:04:20.040
+we write the necessary conditions.
 
-0:04:11.160,0:04:18.480
-when we had the required tokens for it. How
-do I know that I haven't missed anything?
+0:04:20.040,0:04:24.020
+And in this case, we have five transitions.
 
-0:04:19.860,0:04:27.540
-Well, for this marking, for the first marking,
-everything is fine because we have t1, t2, t3,
+0:04:24.020,0:04:34.169
+We have t1, t2, t3, t4 and t5.
 
-0:04:27.540,0:04:34.080
-and t4. We have all of the possible transitions.
-Everything is used. We fired all transitions.
+0:04:34.169,0:04:38.010
+These are all within our table.
 
-0:04:35.220,0:04:42.360
-What about this marking? So here we have t1. And
-t1, as I said, is possible because we have the
+0:04:38.010,0:04:40.949
+And we check as we did with the first net.
 
-0:04:42.360,0:04:53.460
-required token, which is a token in s1. What about
-t2? It seems like t2 is not possible. Let's check.
+0:04:40.949,0:04:42.759
+We checked for t1.
 
-0:04:54.180,0:05:02.280
-So t2 requires a token in s2, which we don't
-have here. What about t3? We have t3. We've done
+0:04:42.759,0:04:44.980
+Can we fire t1 right away?
 
-0:05:02.280,0:05:11.160
-it already. What about t4? For t4 it requires a
-token in s2, which we don't have. So this means
+0:04:44.980,0:04:53.039
+Yes, we can because there's a token in s1
+and we required one token in s1 in order to
 
-0:05:11.160,0:05:18.840
-all possibilities are covered. The same goes for
-all other markings. So I've done the work already.
+0:04:53.039,0:04:54.139
+fire t1.
 
-0:05:19.800,0:05:30.420
-For this marking, for example, we have t2 and
-t4, but we don't have t3 and t1 going out of it.
+0:04:54.139,0:05:00.850
+Our necessary condition is the empty set.
 
-0:05:33.300,0:05:44.460
-That is because t1 requires a token in s1,
-which we don't have, and t3 requires a token
+0:05:00.850,0:05:10.580
+And for the second transition can we fire
+t2 right away?
 
-0:05:44.460,0:05:51.960
-in s1 as well, which we don't have. For this
-marking, we don't have t2, we don't have t4,
+0:05:10.580,0:05:17.330
+Yes, we can because we require one token in
+s2 and we have got one.
 
-0:05:51.960,0:05:58.800
-because both of these transitions require
-tokens in s2, which we don't have.
+0:05:17.330,0:05:23.979
+In this case as well, we've got the empty
+set as the necessary condition.
 
-0:06:01.680,0:06:10.140
-For this transition, we don't have t1 and we don't
-have t3 because both of these transitions require
+0:05:23.979,0:05:33.699
+Then we have t3, which requires a token in
+s3, which we don't have, so in order to fire
 
-0:06:11.760,0:06:22.080
-tokens in s1, which we don't have. Finally,
-for this marking, nothing is possible. No
+0:05:33.699,0:05:37.550
+s3, we require a token in s3.
 
-0:06:22.080,0:06:27.600
-transitions can be fired because t1 requires
-something in s1. We don't have anything in s1.
+0:05:37.550,0:05:44.580
+And the only way of getting a token into s3
+would be by firing t1.
 
-0:06:28.140,0:06:36.780
-t2 requires something in s2 and we don't
-have anything in s2. t3 requires a token in s1,
+0:05:44.580,0:05:50.060
+And we can fire t1.
 
-0:06:36.780,0:06:43.620
-and t4 requires a token in s2. So we don't have anything
-in s1 and s2. This is why this is a dead end.
+0:05:50.060,0:05:55.630
+So t1 is already part of our necessary condition.
 
-0:06:44.760,0:06:50.700
-Now we can use this reachability graph
-to answer the questions of the tables.
+0:05:55.630,0:06:02.750
+And we can fire t1 right away because there's
+a token in s1 and that's the only thing required
 
-0:06:52.200,0:07:01.500
-First of all, this Petri net is not strongly live
-because from this marking that I just mentioned,
+0:06:02.750,0:06:07.540
+for s1.
 
-0:07:02.520,0:07:09.660
-there are no nodes in the graph that can be
-reached by firing any transitions. So in other
+0:06:07.540,0:06:10.640
+Now we can check t4.
 
-0:07:09.660,0:07:15.180
-words, just like I said, this is a dead end.
-Nothing is coming out of it. No arrow is going
+0:06:10.640,0:06:15.500
+t4 requires two tokens in s4.
 
-0:07:15.180,0:07:23.700
-out. So it is sufficient to say this graph is
-not strongly live because we have a deadlock.
+0:06:15.500,0:06:30.669
+There is no token in s4 and therefore we have
+to check how we get two tokens into s4 and
 
-0:07:24.600,0:07:31.380
-Also, this Petri net is weakly live
-because all of the four transitions,
+0:06:30.669,0:06:31.669
+there are two options.
 
-0:07:31.380,0:07:39.540
-t1, t2, t3, t4, occur in the graph. This
-means all of them have been used somehow.
+0:06:31.669,0:06:37.130
+We can fire t2 or we can fire t3.
 
-0:07:40.320,0:07:45.420
-So here we have them, you can see t1,
-t2, t3, t4, everything is mentioned.
+0:06:37.130,0:06:44.039
+As a matter of fact, it doesn't matter which
+one we fire.
 
-0:07:46.560,0:07:58.680
-But this Petri net is not deadlock-free because
-there is this deadlock we discussed before. No
+0:06:44.039,0:06:58.099
+But we
+require two tokens.
 
-0:07:58.680,0:08:08.640
-arrows are going out of this marking. This Petri
-net is also not 1-safe, because for example,
+0:06:58.099,0:07:07.050
+And the only way of getting two tokens is
+by firing t1 as well.
 
-0:08:09.360,0:08:18.180
-this node here contains a value which is bigger
-than one, or this node here, or here. So these
+0:07:07.050,0:07:14.050
+Because when we fire t2, we only get one token
+and there's no token in t3.
 
-0:08:18.180,0:08:26.520
-three nodes, they contain values which are bigger
-than one. That's it. But this Petri net is bounded
+0:07:14.050,0:07:22.370
+That means we have to fire t1 in order to
+get two tokens into s4.
 
-0:08:26.520,0:08:34.980
-because no node contains a value greater than c
-= 2. So the biggest number we see here is two.
+0:07:22.370,0:07:29.800
+And when we fire t1, we get two tokens in
+s2.
 
-0:08:36.840,0:08:44.580
-Or you can also justify it by saying the
-graph is finite. Since we were able to
+0:07:29.800,0:07:39.580
+In this case, we then can fire t2, which will
+give us two tokens in s4.
 
-0:08:45.240,0:08:51.360
-draw the graph and we finished
-the work, the graph is complete,
+0:07:39.580,0:07:45.690
+And it is required to fire t2 at least once,
+because when we fire t1, we also have one
 
-0:08:52.380,0:08:58.980
-this means it's finite, and this means it's
-bounded. So these are all of the values possible.
+0:07:45.690,0:07:56.410
+token in t3, but it is not enough to satisfy
+this two here, so we could either fire t1,
 
-0:08:59.640,0:09:06.120
-All of these are numbers. There is no threes,
-no fours, that's it. This is why it's bounded.
+0:07:56.410,0:08:04.310
+t2, and t3, or t1 and t2 in order to fire
+t4 afterwards.
+
+0:08:04.310,0:08:19.729
+And this means that our necessary condition
+is having t1 and t2 in the sequence of transitions
+
+0:08:19.729,0:08:30.630
+to fire before we can fire t4, because as
+I said, t3 can be fired, but it is not necessarily
+
+0:08:30.630,0:08:36.390
+required because we can also fire t1 and t2
+two times.
+
+0:08:36.390,0:08:44.380
+We could also start with t2, of course so
+there would be three sequences and all have
+
+0:08:44.380,0:08:51.821
+t1 and t2 in them.
+
+0:08:51.821,0:09:00.519
+And the last transition that we have to check
+is t5 and t5 can be fired right away because
+
+0:09:00.519,0:09:02.260
+there's a token in s1.
+
+0:09:02.260,0:09:08.200
+And in order to fire t5, we require one token
+in s1.
+
+0:09:08.200,0:09:14.430
+Once more the empty set for t5 here.
+
+0:09:14.430,0:09:23.579
+And, once again, just to confirm, the table
+on the left-hand side should also contain
+
+0:09:23.579,0:09:26.880
+the transitions and necessary conditions.
+
+0:09:26.880,0:09:32.430
+Of course, these are the transitions here,
+and these are the necessary conditions and
+
+0:09:32.430,0:09:40.699
+we've answered this part for both Petri nets
+and are done with our task.

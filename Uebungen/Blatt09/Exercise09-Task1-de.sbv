@@ -1,708 +1,434 @@
-0:00:01.630,0:00:06.690
-In dieser Aufgabe zu den Eigenschaften von
-Petrinetzen haben wir zuerst einmal ein Petrinetz
+0:00:00.140,0:00:05.509
+In dieser Aufgabe geht es um die Kausalitäten
+von Petrinetzen.
 
-0:00:06.690,0:00:11.130
-gegeben, für das wir in der ersten Teilaufgabe
-den Erreichbarkeitsgraphen angeben sollen.
+0:00:05.509,0:00:13.310
+Dafür soll man sich die Petrinetze N1
+und N2 angucken und für beide Petrinetze
 
-0:00:11.130,0:00:12.960
-Dafür schauen wir uns erstmal das Petrinetz
+0:00:13.310,0:00:18.540
+für alle Transitionen die notwendigen Bedingungen
+im Sinne der Definition der Kausalität auf
+
+0:00:18.540,0:00:21.060
+Folie 173 der Vorlesung angeben.
+
+0:00:21.060,0:00:24.619
+Also gucken wir uns einmal die Folie zur Vorlesung
 an.
 
-0:00:12.960,0:00:14.860
-Wir haben drei Stellen.
+0:00:24.619,0:00:33.450
+Hier auf der Folie sehen wir die Definition
+von Kausalität.
 
-0:00:14.860,0:00:24.599
-Und die Startmarkierung ist eine Markierung
-in s1 und eine Markierung in s2.
+0:00:33.450,0:00:38.170
+Diese lautet: In einem Petrinetz nennt man
+die Transition t1 eine notwendige Bedingung
 
-0:00:24.599,0:00:31.050
-Das schreiben wir einfach auf als (1,1,0),
-also Stelle eins, Stelle zwei, Stelle drei
+0:00:38.170,0:00:44.809
+für das Schalten der Transition t2 genau
+dann, wenn für alle Schaltfolgen von t gilt:
 
-0:00:31.050,0:00:33.700
-und die Anzahl der jeweiligen Tokens.
+0:00:44.809,0:00:53.370
+falls von der Startmarkierung aus ein t geschaltet
+werden muss, um t2 schalten zu können,
 
-0:00:33.700,0:00:37.860
-Da das hier die Startmarkierung ist, machen
-wir noch einen Pfeil drauf, der aus dem Nichts
+0:00:53.370,0:00:59.429
+um zu einer Markierung zu kommen für die
+eine Markierung m, dann enthält t definitiv
 
-0:00:37.860,0:00:38.860
-kommt.
+0:00:59.429,0:01:01.370
+die Transition t1.
 
-0:00:38.860,0:00:41.330
-Das zeigt einfach nur an, dass das die Startmarkierung
-ist.
+0:01:01.370,0:01:07.460
+Das bedeutet, wir sollen das in dieser Aufgabe
+für alle Transitionen angeben.
 
-0:00:41.330,0:00:45.370
-Und von dieser Startmarkierung schauen wir
-uns jetzt an, welche Transitionen möglich
+0:01:07.460,0:01:08.600
+Das ist ganz wichtig.
 
-0:00:45.370,0:00:48.690
-sind und welche Markierungen damit erreicht
-werden.
+0:01:08.600,0:01:14.500
+Das bedeutet, falls so eine Aufgabe in der
+Klausur drankommt, dass ihr das am besten
 
-0:00:48.690,0:00:54.260
-t1 erwartet ein Token in s1 und gibt ein Token
-in s2.
+0:01:14.500,0:01:16.799
+genauso aufschreibt, wie ich das jetzt gleich
+tue.
 
-0:00:54.260,0:00:59.310
-Der Token in s1 ist vorhanden, das heißt
-t1 kann von dieser Markierung aus schalten.
+0:01:16.799,0:01:20.979
+Wir haben erstmal N1.
 
-0:00:59.310,0:01:06.219
-Und damit erreichen wir die Markierung (0,2,0),
-denn der Token aus s1 wird konsumiert und
+0:01:20.979,0:01:25.070
+Und dann haben wir alle Transitionen.
 
-0:01:06.219,0:01:08.689
-dafür wird einer in s2 abgelegt, wo schon
-einer ist.
+0:01:25.070,0:01:29.060
+Jetzt habe ich Transitionen falsch geschrieben.
 
-0:01:08.689,0:01:10.820
-Das heißt, das ist dann hier zwei.
+0:01:29.060,0:01:30.369
+Ich mache es nochmal.
 
-0:01:10.820,0:01:13.549
-Jetzt können wir schauen, wie wir weitermachen.
+0:01:30.369,0:01:39.689
+Wir haben alle Transitionen, die
+wir durchgehen müssen.
 
-0:01:13.549,0:01:16.710
-Entweder machen wir mit dieser Markierung
-weiter und schauen, welche Transitionen hier
+0:01:39.689,0:01:43.539
+Und dann haben wir noch die notwendige Bedingung.
 
-0:01:16.710,0:01:18.060
-möglich sind.
+0:01:43.539,0:01:50.780
+Da mache ich einen Punkt hin.
 
-0:01:18.060,0:01:24.520
-Aber ich finde es normalerweise ein bisschen
-einfacher, einfach erstmal jede Markierung
-
-0:01:24.520,0:01:25.520
-abzuarbeiten.
-
-0:01:25.520,0:01:28.714
-Also wir schauen jetzt erstmal, welche anderen
-Transitionen von unserer Startpositionen noch
-
-0:01:28.714,0:01:31.270
-schaltbar sind und zeichnen die dann ein.
-
-0:01:31.270,0:01:34.899
-Und normalerweise, wenn man das so nach und
-nach macht, ist die Chance auch geringer,
-
-0:01:34.899,0:01:36.030
-dass man da irgendetwas vergisst.
-
-0:01:36.030,0:01:39.939
-Das heißt, wir schauen uns jetzt hier von
-unserer Startmarkierung aus erstmal noch t2
-
-0:01:39.939,0:01:40.959
+0:01:50.780,0:01:56.049
+Und das legen wir jetzt nämlich als Tabelle
 an.
 
-0:01:40.959,0:01:45.319
-t2 erwartet ein Token in s2 und gibt eines
-an s1.
-
-0:01:45.319,0:01:46.889
-Die Vorbedingung ist gegeben.
-
-0:01:46.889,0:01:49.710
-Das heiß, t2 kann schalten.
-
-0:01:49.710,0:01:56.929
-Und damit erreichen wir die Markierung (2,0,0),
-denn der Token aus s2 wird konsumiert und
-
-0:01:56.929,0:01:59.509
-legt einen in s1 ab, wo schon einer drin ist.
-
-0:01:59.509,0:02:01.579
-Die sind sich ziemlich ähnlich.
-
-0:02:01.579,0:02:04.189
-Deswegen ist das auch ein kleiner Kreislauf.
-
-0:02:04.189,0:02:09.890
-Und wie die Auswirkungen da unten sind, sehen
-wir gleich.
-
-0:02:09.890,0:02:12.480
-Aber erstmal machen wir noch mit t3 weiter.
-
-0:02:12.480,0:02:15.820
-t3 erwartet auch einen Token in s1 und gibt
-einen in s3.
-
-0:02:15.820,0:02:17.410
-Die Vorbedingung ist gegeben.
-
-0:02:17.410,0:02:19.360
-Das heißt, auch t3 kann schalten.
-
-0:02:19.360,0:02:30.340
-Und mit t3 kommen wir zu der Markierung (0,1,1),
-denn jetzt wird ein Token praktisch auf s3
-
-0:02:30.340,0:02:36.670
-abgelegt und einer aus s1 rausgenommen. t4
-ist auch wieder parallel dazu, nur aus s1,
-
-0:02:36.670,0:02:38.170
-und kann auch schalten.
-
-0:02:38.170,0:02:47.030
-Und damit erreichen wir die Markierung (1,0,1).
-
-0:02:47.030,0:02:52.930
-Und damit haben wir jetzt von unserer Startmarkierung
-alle vier Transitionen aus abgearbeitet und
-
-0:02:52.930,0:02:55.850
-können uns jetzt eine von diesen vier aussuchen,
-mit der wir weitermachen.
-
-0:02:55.850,0:03:01.450
-Machen wir mit der weiter, die wir als erstes
-gefunden haben, die (0,2,0), und schauen an,
-
-0:03:01.450,0:03:03.900
-was daraus möglich ist.
-
-0:03:03.900,0:03:07.260
-t1 ist nicht möglich, denn es gibt kein Token
-in s1.
-
-0:03:07.260,0:03:11.800
-Damit ist die Vorbedingung nicht gegeben und
-t1 kann nicht schalten. t2 allerdings hat
-
-0:03:11.800,0:03:12.800
-die Vorbedingung gegeben.
-
-0:03:12.800,0:03:15.060
-Es gibt sogar zwei Token in s2.
-
-0:03:15.060,0:03:18.860
-Das heißt, t2 kann auf jeden Fall mindestens
-einmal schalten von hier aus.
-
-0:03:18.860,0:03:27.210
-Und damit kommen wir einfach nur zurück zu
-unserer Startmarkierung, denn der Token, den
-
-0:03:27.210,0:03:32.730
-wir eben in s2 bewegt haben, wird praktisch
-wieder zu s1 bewegt.
-
-0:03:32.730,0:03:38.010
-Dann haben wir noch t3. t3 kann auch wieder
-nicht schalten.
-
-0:03:38.010,0:03:41.030
-Es erwartet nämlich einen Token in s1, der
-nicht vorhanden ist.
-
-0:03:41.030,0:03:42.500
-Aber t4 kann schalten.
-
-0:03:42.500,0:03:50.670
-Und damit kommen wir zu derselben Markierung,
-die wir schon einmal haben, nämlich (0,1,1).
-
-0:03:50.670,0:03:53.570
-Der eine Token, der in s2 drin lag, ist noch
-da.
-
-0:03:53.570,0:03:58.610
-Und der andere Token, der konsumiert wurde,
-und dafür ein neuer in s3 abgelegt wurde,
-
-0:03:58.610,0:04:00.710
-ist dann hier in s3.
-
-0:04:00.710,0:04:06.090
-Das ist auch eine wichtige Sache bei Erreichbarkeitsgraphen,
-dass man immer guckt, wenn man eine Markierung
-
-0:04:06.090,0:04:09.180
-erreicht, ob man nicht dieselbe Markierung
-schon irgendwo im Graphen drin hat, damit
-
-0:04:09.180,0:04:11.900
-man nicht dieselbe Markierung doppelt drin
-hat.
-
-0:04:11.900,0:04:17.130
-Also das ist schon gut, dass das hier direkt
-daneben gezeichnet war, denn hier haben wir
-
-0:04:17.130,0:04:19.192
-direkt gesehen, dass das da ist.
-
-0:04:19.192,0:04:21.540
-Das kann manchmal, je nachdem, wie man anfängt
-zu zeichnen, schwieriger sein.
-
-0:04:21.540,0:04:23.660
-Ich hätte ja auch (0,1,1) hier oben hinsetzen
-können.
-
-0:04:23.660,0:04:26.280
-Dann wäre der Pfeil natürlich ein bisschen
-blöd gewesen.
-
-0:04:26.280,0:04:28.560
-Das hätte man dann vielleicht neu zeichnen
-müssen.
-
-0:04:28.560,0:04:33.290
-Aber je nachdem, wie das rauskommt, immer
-einmal komplett über den Erreichbarkeitsgraphen
-
-0:04:33.290,0:04:35.870
-ein bisschen drüber gucken, damit man dann
-am Ende nichts doppelt hat.
-
-0:04:35.870,0:04:42.620
-Damit haben wir von dieser Markierung aber
-jetzt alle Transitionen durch, die da möglich
-
-0:04:42.620,0:04:46.340
-sind, und können uns eine andere Markierung
-aussuchen.
-
-0:04:46.340,0:04:52.970
-Machen wir mal mit der zweiten weiter, die
-wir gefunden haben, nämlich der (2,0,0),
-
-0:04:52.970,0:04:54.170
-und schauen, was da möglich ist.
-
-0:04:54.170,0:04:55.930
-Hier ist t1 möglich.
-
-0:04:55.930,0:05:00.590
-Das ist der Gegenspieler zu dem t2, den wir
-hier unten gefunden haben.
-
-0:05:00.590,0:05:06.880
-Der bewegt einfach nur den Token, den wir
-eben in die s1 bewegt haben, wieder zurück.
-
-0:05:06.880,0:05:14.970
-Und damit kommen wir wieder zu unserer Startmarkierung.
-
-0:05:14.970,0:05:20.350
-Also das ist jetzt praktisch dieser Kreislauf,
-den wir da oben sehen, realisiert im Erreichbarkeitsgraphen,
-
-0:05:20.350,0:05:27.220
-denn mit t1 und t2 können wir die Marken
-einfach nur immer, so oft wir wollen, hin-
-
-0:05:27.220,0:05:35.389
-und herbewegen. t3 ist hier möglich, denn
-die Marken in s2 sind ja vorhanden.
-
-0:05:35.389,0:05:37.771
-Und es agiert ähnlich, wie das t4, das wir
-hier oben gefunden haben.
-
-0:05:37.771,0:05:42.889
-Wir kommen damit nämlich zu einer Markierung,
-die wir schon haben, nämlich der (1,0,1).
-
-0:05:42.889,0:05:49.760
-Man sieht hier auch schon ein bisschen diese
-Spiegelung im Erreichbarkeitsgraphen, die
-
-0:05:49.760,0:05:54.240
-auch hier im Petrinetz vorhanden ist.
-
-0:05:54.240,0:05:59.110
-Und jetzt gucken wir noch, ob t4 möglich
-ist.
-
-0:05:59.110,0:06:03.680
-t4 kann wieder nicht schalten, genauso wie
-hier unten t3 nicht schalten kann, denn die
-
-0:06:03.680,0:06:09.340
-Vorbedingung von t4 ist hier nicht gegeben,
-denn es gibt keine Marken in s2.
-
-0:06:09.340,0:06:13.410
-Das heißt, auch mit dieser Markierung sind
-wir fertig und können mit der nächsten weitermachen.
-
-0:06:13.410,0:06:17.540
-Also machen wir mit der (0,1,1) weiter.
-
-0:06:17.540,0:06:26.520
-Bei (0,1,1) kann auch t1 wieder nicht schalten,
-denn es gibt keine Marken in s1. t2 kann aber
-
-0:06:26.520,0:06:27.520
-schalten.
-
-0:06:27.520,0:06:36.920
-Und das bewegt ganz einfach nur eine Marke
-aus s2 in s1 rüber.
-
-0:06:36.920,0:06:45.820
-Und damit kommen wir zu der Markierung (1,0,1),
-die wir hier oben schon haben.
-
-0:06:45.820,0:06:56.460
-Ebenfalls nicht möglich ist die t3, denn
-wir haben auch hier wieder keine Marke in
-
-0:06:56.460,0:06:57.460
-s1 liegen.
-
-0:06:57.460,0:06:59.270
-Aber t4 ist möglich.
-
-0:06:59.270,0:07:02.250
-Und das bewegt eine Marke aus s2 in s3.
-
-0:07:02.250,0:07:04.139
-Also geht diese Marke in s3 rein.
-
-0:07:04.139,0:07:09.680
-Und wir kommen zum ersten Mal jetzt seit einer
-Weile wieder zu einer neuen Markierung, nämlich
-
-0:07:09.680,0:07:18.190
-der Markierung (0,0,2), denn jetzt haben wir
-nach und nach alle Tokens aus den jeweiligen
-
-0:07:18.190,0:07:19.210
-Stellen in die s3 bewegt.
-
-0:07:19.210,0:07:23.290
-Das ist die t4 gewesen.
-
-0:07:23.290,0:07:29.930
-Damit haben wir auch hier alle Transitionen
-fertig und können mit der nächsten, der
-
-0:07:29.930,0:07:30.930
-(1,0,1), weitermachen.
-
-0:07:30.930,0:07:38.660
-Und bei der (1,0,1) ist die t1 möglich, die
-die t2 Marke zu der anderen hierunter bewegt.
-
-0:07:38.660,0:07:52.080
-Also ist auch hier wieder diese kleine Kreislauf
-von den t1s und den t2s drin zu sehen, der
-
-0:07:52.080,0:07:53.660
-oben im Petrinetz vorhanden ist.
-
-0:07:53.660,0:08:01.360
-Denn hier kann man auch so oft, wie man will,
-die Marken mit t1 und t2 hin- und herbewegen.
-
-0:08:01.360,0:08:06.199
-t2 ist nicht möglich, weil es in dieser Markierung
-keine Marken in s2 gibt.
-
-0:08:06.199,0:08:12.490
-t3 ist möglich und bewegt die Marke aus s1
-in s3 rein.
-
-0:08:12.490,0:08:17.880
-Das bringt uns auch wieder zu einer Markierung,
-die wir hier schon haben, nämlich der (0,0,2).
-
-0:08:17.880,0:08:20.040
-Und t4 ist nicht möglich.
-
-0:08:20.040,0:08:23.570
-Und damit haben wir auch hier alle Transitionen
-durchgearbeitet.
-
-0:08:23.570,0:08:30.449
-Jetzt müssen wir uns zuletzt noch angucken,
-was aus der Markierung (0,0,2) möglich ist.
-
-0:08:30.449,0:08:33.440
-Und wir sehen im Petrinetz direkt, dass es
-keine Transitionen gibt, die irgendwas aus
-
-0:08:33.440,0:08:34.810
-s3 rausnehmen.
-
-0:08:34.810,0:08:41.020
-Und da wir keine Tokens in anderen Stellen
-liegen haben, können wir auch keine anderen
-
-0:08:41.020,0:08:42.020
-Transitionen mehr schalten.
-
-0:08:42.020,0:08:43.630
-Das heißt, das ist in dem Fall ein Dead End.
-
-0:08:43.630,0:08:49.120
-Und das beendet auch unseren Erreichbarkeitsgraphen.
-
-0:08:49.120,0:08:57.600
-Und damit haben wir auch die erste Teilaufgabe
-fertig und können zur Teilaufgabe b weitergehen,
-
-0:08:57.600,0:09:01.110
-die endlich den eigentlichen Titel der Aufgabe
-beinhaltet, nämlich die Eigenschaften von
-
-0:09:01.110,0:09:02.440
-Petrinetzen zu betrachten.
-
-0:09:02.440,0:09:06.610
-Hierfür haben wir zwei Tabellen, die die
-Eigenschaften stark lebendig, schwach lebendig,
-
-0:09:06.610,0:09:10.290
-verklemmungsfrei, 1-sicher oder beschränkt
-mit der Möglichkeit zu Ja- oder Nein-Antworten
-
-0:09:10.290,0:09:11.290
-darstellen.
-
-0:09:11.290,0:09:14.959
-Ich habe jetzt mit Absicht das Petrinetz verdeckt,
-denn die Aufgabenstellung in dieser Teilaufgabe
-
-0:09:14.959,0:09:20.290
-sagt ganz explizit, dass wir unsere Begründungen,
-die wir dafür angeben müssen, jeweils anhand
-
-0:09:20.290,0:09:23.139
-des Erreichbarkeitsgraphen machen sollen,
-den wir aus der ersten Teilaufgabe haben,
-
-0:09:23.139,0:09:26.470
-und nicht anhand des Petrinetzes oder sonst
-irgendetwas.
-
-0:09:26.470,0:09:31.890
-Dafür fangen wir jetzt erstmal an mit stark
-lebendig.
-
-0:09:31.890,0:09:38.990
-Stark lebendig heißt einfach nur, dass von
-jeder Markierung aus für jede Transition
-
-0:09:38.990,0:09:42.960
-eine Markierung erreichbar ist, die diese
-Transition aktiviert.
-
-0:09:42.960,0:09:47.580
-Das heißt, egal in welcher Markierung wir
-drin sind, wir können immer irgendeine andere
-
-0:09:47.580,0:09:52.910
-Markierung erreichen, die dann die Transition
-aktivieren kann.
-
-0:09:52.910,0:09:56.490
-Und das gilt für alle Transitionen.
-
-0:09:56.490,0:10:05.390
-Ein Ausschlusskriterium für stark lebendig
-ist immer das Vorhandensein eines Deadlocks.
-
-0:10:05.390,0:10:13.260
-Also ob wir irgendwo eine Sackgasse haben,
-aus der wir gar nicht mehr rauskommen.
-
-0:10:13.260,0:10:19.470
-Und in unserem Erreichbarkeitsgraphen ist
-das, wie wir eben schon erwähnt haben, hier
-
-0:10:19.470,0:10:20.899
-hinten bei der (0,0,2) gegeben.
-
-0:10:20.899,0:10:25.209
-Wir haben hier eine Markierung, aus der es
-keine Transitionen herausgibt.
-
-0:10:25.209,0:10:27.770
-Und das können wir dann in unserer Begründung
-angeben.
-
-0:10:27.770,0:10:35.520
-Im Erreichbarkeitsgraphen sind von der Markierung
-(0,0,2) keine anderen Markierungen erreichbar
-
-0:10:35.520,0:10:37.270
-und keine Transitionen schaltbar.
-
-0:10:37.270,0:10:42.670
-Daher haben wir hier eine Verklemmung und
-damit kann es nicht stark lebendig sein.
-
-0:10:42.670,0:10:47.660
-Jetzt ist die Frage, ob es schwach lebendig
-ist.
-
-0:10:47.660,0:10:53.040
-Schwach lebendig ist nicht ganz so streng, deswegen
-heißt es auch schwach und nicht stark lebendig.
-
-0:10:53.040,0:10:58.180
-Bei schwach lebendig reicht es einfach, wenn
-alle Transitionen überhaupt irgendwo einmal
-
-0:10:58.180,0:10:59.899
-geschaltet werden können.
-
-0:10:59.899,0:11:05.490
-Das heißt, wir gucken uns unseren Erreichbarkeitsgraphen
-an und schauen, ob alle Transitionen, die
-
-0:11:05.490,0:11:11.140
-vorhanden sind, also t1, t2, t3 und t4 im
-Erreichbarkeitsgraphen vorkommen.
-
-0:11:11.140,0:11:13.610
-Und das ist ganz klar.
-
-0:11:13.610,0:11:18.230
-Wir haben schon hier mindestens einmal t1,
+0:01:56.049,0:02:02.450
+Und wir haben hier in diesem Petrinetz t1,
 t2, t3 und t4.
 
-0:11:18.230,0:11:20.899
-Das heißt, es ist mindestens schwach lebendig.
+0:02:02.450,0:02:04.110
+Also das sind alle unsere Transitionen.
 
-0:11:20.899,0:11:23.560
-Jetzt ist die Frage, ob es verklemmungsfrei
-ist.
+0:02:04.110,0:02:08.340
+Also schreiben wir hier mal auf t1, t2, t3,
+t4.
 
-0:11:23.560,0:11:28.610
-Das haben wir eben schon bei stark lebendig
-als Begründung angebracht.
+0:02:08.340,0:02:19.980
+Dann gucken wir uns jetzt an, ob es für t1
+eine Transition gibt, die von der Startmarkierung
 
-0:11:28.610,0:11:30.910
-Das können wir hier einfach nochmal verwenden.
+0:02:19.980,0:02:22.890
+aus schalten muss, damit t1 schalten kann.
 
-0:11:30.910,0:11:41.230
-Es ist nicht verklemmungsfrei, denn aus Markierung
-(0,0,2) gibt es keine Kanten, die da rausführen.
+0:02:22.890,0:02:26.870
+Also gucken wir uns bei t1 an, ob t1 gerade
+schalten kann.
 
-0:11:41.230,0:11:45.620
-Denn das sind ja nur die Kanten, die angeben,
-welche Transitionen geschaltet werden.
+0:02:26.870,0:02:30.580
+Die Vorbedingung ist, dass eine Marke aus
+s1 und eine aus s2 kommt.
 
-0:11:45.620,0:11:51.300
-Jetzt haben wir die Frage, ob es 1-sicher
-ist.
+0:02:30.580,0:02:34.030
+Und wie man hier sieht, ist das von der Startmarkierung
+aus gegeben.
 
-0:11:51.300,0:11:58.680
-1-sicher oder n-sicher bedeutet einfach nur,
-dass es keine Markierung gibt, in dem eine
+0:02:34.030,0:02:38.849
+Das bedeutet t1 kriegt eine Marke von s1 und
+s2.
 
-0:11:58.680,0:12:01.200
-Stelle dieses n überschreitet.
+0:02:38.849,0:02:40.110
+Das ist möglich.
 
-0:12:01.200,0:12:10.870
-Das heißt, 1-sicher bedeutet, wir dürfen
-keine Stellen haben, die zu einem Zeitpunkt
+0:02:40.110,0:02:45.251
+t1 kann also immer direkt schalten und braucht
+nicht vorher eine andere Transition, die schalten
 
-0:12:10.870,0:12:13.760
-mehr als eine Marke haben.
+0:02:45.251,0:02:46.251
+muss.
 
-0:12:13.760,0:12:17.360
-Und hier haben wir alleine hier oben schon
-direkt die (2,0,0).
+0:02:46.251,0:02:52.750
+Mit anderen Worten haben wir hier die leere
+Menge, weil vorher keine Transition schalten
 
-0:12:17.360,0:12:25.120
-Das heißt mit der Begründung, dass die Markierung
-(2,0,0) existiert, ist es nicht 1-sicher.
+0:02:52.750,0:02:53.750
+muss.
 
-0:12:25.120,0:12:28.080
-Ist es beschränkt?
+0:02:53.750,0:02:57.200
+Dann gucken wir uns t2 an.
 
-0:12:28.080,0:12:32.120
-Bei Beschränktheit kann man auch angeben,
-um wie viel etwas beschränkt ist.
+0:02:57.200,0:03:00.860
+t2 hat als Vorbedingung nur, dass eine Marke
+aus s1 kommt.
 
-0:12:32.120,0:12:34.820
-Deswegen ist das auch hier in derselben Tabelle
-mit drin.
+0:03:00.860,0:03:03.400
+In der Startmarkierung gibt es eine Marke in s1.
 
-0:12:34.820,0:12:37.240
-Das spielt mit dem 1-sicher ein bisschen zusammen.
+0:03:03.400,0:03:06.540
+Also kann t2 auch direkt schalten.
 
-0:12:37.240,0:12:42.410
-Beschränkt heißt einfach nur, dass es ein
-Limit für die Marken gibt.
+0:03:06.540,0:03:12.130
+Also ist t2 auch wiederum die leere Menge,
+weil es davor keine notwendigen Bedingungen
 
-0:12:42.410,0:12:48.740
-Es ist nicht 1-sicher, das heißt es gibt
-Stellen, wo mehr als ein Token in einer Stelle
+0:03:12.130,0:03:13.130
+gibt.
 
-0:12:48.740,0:12:49.740
-drin ist.
+0:03:13.130,0:03:15.659
+Dann gucken wir uns t3 an.
 
-0:12:49.740,0:12:50.800
-Aber ist es beschränkt?
+0:03:15.659,0:03:16.909
+t3 ist hier.
 
-0:12:50.800,0:12:57.180
-Das können wir am Erreichbarkeitsgraphen
-einfach daran sehen, dass der Erreichbarkeitsgraph
+0:03:16.909,0:03:20.489
+t3 braucht zwei Marken aus s2, um schalten
+zu können.
 
-0:12:57.180,0:12:58.180
-endlich ist.
+0:03:20.489,0:03:23.530
+Jetzt sehen wir hier, dass in der Startmarkierung
+nur eine Marke ist.
 
-0:12:58.180,0:13:03.410
-Denn wenn es nicht beschränkt wäre, dann
-würden wir immer weitergehen, denn wir hätten
+0:03:23.530,0:03:26.349
+Das bedeutet: Wie kriegen wir hier noch eine
+zweite Marke rein?
 
-0:13:03.410,0:13:06.700
-immer neue Markierungen, wo immer höhere
-Zahlen reinkommen würden.
+0:03:26.349,0:03:31.720
+Wenn wir uns das genau angucken, dann kann
+zum Beispiel t2 hier schalten.
 
-0:13:06.700,0:13:16.370
-Sagen wir mal, es gäbe eine t5, die einfach
-nur eine Marke in Stelle eins reinlegen würde,
+0:03:31.720,0:03:36.099
+Wenn t2 schaltet, dann wandert diese Marke
+hier rüber und wir haben hier zwei Marken.
 
-0:13:16.370,0:13:23.540
-dann könnten wir zum Beispiel aus dieser
-Markierung immer t5 schalten und würden dann
+0:03:36.099,0:03:38.330
+Und dann kann t3 schalten.
 
-0:13:23.540,0:13:26.140
-zu (2,0,1) kommen.
+0:03:38.330,0:03:44.269
+Das bedeutet, von der Startmarkierung aus
+muss erst t2 geschaltet haben, damit t3 schalten
 
-0:13:26.140,0:13:31.800
-Und dann schalten wir nochmal t5 und kommen
-zu (3,0,1).
+0:03:44.269,0:03:45.269
+kann.
 
-0:13:31.800,0:13:34.529
-Und das würde dann nie aufhören.
+0:03:45.269,0:03:55.470
+Das bedeutet in der notwendigen Bedingung
+für t3 haben wir als Menge t2 stehen.
 
-0:13:34.529,0:13:40.250
-Das wäre dann hier in dem Fall mit der t5
-unendlich und damit wäre auch der Erreichbarkeitsgraph
+0:03:55.470,0:03:59.120
+Und dann gucken wir uns zu guter Letzt noch
+t4 an.
 
-0:13:40.250,0:13:42.060
-unendlich und es wäre nicht beschränkt.
+0:03:59.120,0:04:04.659
+t4 braucht von der Startmarkierung aus als
+Vorbedingung eine Marke aus s3.
 
-0:13:42.060,0:13:51.261
-Da wir aber das nicht haben, sondern maximal
-zwei Marken in einer Stelle drin liegen, können
+0:04:04.659,0:04:06.640
+Hier liegt eine Marke in s3 drin.
 
-0:13:51.261,0:13:53.029
-wir sagen, dass es beschränkt ist.
+0:04:06.640,0:04:09.610
+Also ist die notwendige Bedingung erfüllt.
 
-0:13:53.029,0:13:56.500
-Und insbesondere können wir sagen, es ist zwei-beschränkt.
+0:04:09.610,0:04:15.580
+Jetzt gucken wir uns das Gleiche noch einmal
+für N2 an.
 
-0:13:56.500,0:14:02.840
-Und damit haben wir diese Tabellen fertig
-und die Eigenschaften betrachtet und die erste
+0:04:15.580,0:04:22.790
+Ich gucke mal, ob ich das hier neben bekomme,
+damit man die noch sieht.
 
-0:14:02.840,0:14:03.910
-Aufgabe fertig.
+0:04:22.790,0:04:32.280
+Ich schreibe hier jetzt nur T für Transition
+und notwendige Bedingung (n.B.).
+
+0:04:32.280,0:04:42.200
+Wir haben hier wieder t1, t2, t3, t4 und sogar
+t5.
+
+0:04:42.200,0:04:52.360
+Wir schreiben hier wieder die Transitionen
+hin. t1, t2, t3, t4 und t5.
+
+0:04:52.360,0:04:57.460
+Ich ziehe das hier noch so ein bisschen runter.
+
+0:04:57.460,0:05:00.380
+Und jetzt gucken wir uns wieder die einzelnen
+Transitionen an.
+
+0:05:00.380,0:05:02.750
+Das bedeutet wir gucken uns t1 an.
+
+0:05:02.750,0:05:07.060
+t1 hat von der Startmarkierung die Vorbedingungen,
+dass eine Marke von s1 kommt.
+
+0:05:07.060,0:05:10.540
+Hier in der Startmarkierung liegt eine Marke
+in s1 drin.
+
+0:05:10.540,0:05:11.820
+Also kann t1 schalten.
+
+0:05:11.820,0:05:15.360
+Hier haben wir also wieder eine leere Menge.
+
+0:05:15.360,0:05:17.830
+Für t2 gucken wir uns das an.
+
+0:05:17.830,0:05:20.600
+t2 hat als Vorbedingung, dass eine Marke aus
+s2 kommt.
+
+0:05:20.600,0:05:25.090
+Hier liegt eine Marke in der Startmarkierung
+drin. t2 kann also schalten.
+
+0:05:25.090,0:05:27.420
+Also haben wir hier auch die leere Menge.
+
+0:05:27.420,0:05:29.100
+Gucken wir uns t3 an.
+
+0:05:29.100,0:05:32.270
+t3 hat als Vorbedingung, dass eine Marke aus
+s3 kommt.
+
+0:05:32.270,0:05:35.050
+Allerdings liegt hier in der Startmarkierung
+keine drin.
+
+0:05:35.050,0:05:37.350
+Also müssen wir gucken, wie wir dort eine
+reinkriegen.
+
+0:05:37.350,0:05:42.100
+Eine kommt von t1, wenn t1 schaltet. t1 konnte
+ja schalten.
+
+0:05:42.100,0:05:43.740
+Das hatten wir hier schon aufgeschrieben.
+
+0:05:43.740,0:05:49.690
+Das bedeutet, wenn t1 schalten würde, dann
+würde hier eine Marke reingehen und hier
+
+0:05:49.690,0:05:51.660
+und hier eine rausgehen.
+
+0:05:51.660,0:05:53.680
+Und dann könnte t3 schalten.
+
+0:05:53.680,0:06:04.270
+Das bedeutet, t3 hat als Vorbedingung t1.
+Gucken wir uns t4 an.
+
+0:06:04.270,0:06:06.950
+t4 ist hier unten.
+
+0:06:06.950,0:06:10.830
+t4 braucht zwei Marken in s4.
+
+0:06:10.830,0:06:16.090
+Das bedeutet hier müssen zwei Marken rein.
+
+0:06:16.090,0:06:17.790
+Hier sind keine zwei Marken.
+
+0:06:17.790,0:06:20.530
+Also gucken wir, wo Marken herkommen könnten.
+
+0:06:20.530,0:06:22.530
+Eine Marke könnte hierherkommen.
+
+0:06:22.530,0:06:25.740
+Dafür müsste aber s2 schalten.
+
+0:06:25.740,0:06:27.940
+Dann wäre eine Marke hier.
+
+0:06:27.940,0:06:30.750
+Und dann könnte noch eine Marke hierhin.
+
+0:06:30.750,0:06:35.330
+Und dann müsste noch t2 schalten.
+
+0:06:35.330,0:06:40.990
+Aber dann hätten wir t1, t2, und t3 geschaltet
+und hätten dann zwei Marken hier.
+
+0:06:40.990,0:06:46.910
+Es gibt aber noch einen einfacheren Weg, nämlich
+den über t2. t2 kann schonmal schalten, was
+
+0:06:46.910,0:06:48.330
+bedeutet, dass eine Marke hierüberwandert.
+
+0:06:48.330,0:06:50.460
+Dann haben wir hier schonmal eine.
+
+0:06:50.460,0:06:56.330
+Und wenn wir dann vorher noch t1 schalten
+und hier eine Marke haben, und dann nochmal
+
+0:06:56.330,0:06:59.300
+t2 schalten, dann haben wir hier auch zwei
+Marken.
+
+0:06:59.300,0:07:05.850
+Das bedeutet, man muss nicht unbedingt t3
+schalten, um hier zwei Marken hinzubekommen.
+
+0:07:05.850,0:07:09.580
+Man muss aber hundertprozentig t1 und t2 schalten.
+
+0:07:09.580,0:07:11.840
+Ich hoffe, das ist jetzt klar geworden.
+
+0:07:11.840,0:07:19.350
+Wie gesagt könnte man t3 schalten, aber als
+notwendige Bedingung gilt ja nur das, was
+
+0:07:19.350,0:07:20.350
+wirklich notwendig ist.
+
+0:07:20.350,0:07:25.020
+Und wenn es einen Weg gibt, wo wir t3 rauslassen
+können, nämlich indem wir t1 schalten und
+
+0:07:25.020,0:07:31.680
+dann zweimal t2 schalten, dann ist t3 keine
+notwendige Bedingung, weil es nicht notwendig
+
+0:07:31.680,0:07:33.460
+ist, um hier zwei Marken reinzubekommen.
+
+0:07:33.460,0:07:37.270
+Und sobald wir hier zwei Marken haben, können
+wir dann t4 schalten.
+
+0:07:37.270,0:07:48.610
+Das bedeutet, t4 hat als Vorbedingung t1 und
+t2, weil die wirklich beide notwendig sind,
+
+0:07:48.610,0:07:49.610
+um das zu schalten.
+
+0:07:49.610,0:07:54.170
+Man kann auch nicht t2 umgehen, weil man dann
+t1 schalten müsste.
+
+0:07:54.170,0:07:56.560
+Dann würde hier eine Marke liegen und hier
+zwei.
+
+0:07:56.560,0:07:59.430
+Und wenn man dann t3 schaltet, würde hier
+eine liegen.
+
+0:07:59.430,0:08:01.160
+Aber t3 kann ja nicht nochmal schalten.
+
+0:08:01.160,0:08:03.650
+Das bedeutet, man kann t2 nicht umgehen.
+
+0:08:03.650,0:08:06.740
+Das heißt t2 und t1 müssen wirklich drin
+sein.
+
+0:08:06.740,0:08:11.100
+Und dann gucken wir uns zuletzt noch t5 an.
+
+0:08:11.100,0:08:14.720
+t5 hat als Vorbedingung, dass eine Marke aus
+s1 kommt.
+
+0:08:14.720,0:08:16.870
+Wir haben eine Marke in s1 liegen.
+
+0:08:16.870,0:08:18.610
+Also ist das überhaupt kein Problem.
+
+0:08:18.610,0:08:23.430
+Mit anderen Worten hat t5 als notwendige Bedingung
+auch die leere Menge.
+
+0:08:23.430,0:08:27.970
+Und das ist schon die Lösung dieser Aufgabe.

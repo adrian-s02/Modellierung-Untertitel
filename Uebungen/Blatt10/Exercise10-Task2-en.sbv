@@ -1,167 +1,198 @@
-0:00:00.420,0:00:05.700
-Exercise sheet number 11, task number one.
+0:00:00.000,0:00:08.880
+Translating an activity diagram to a Petri
+net.
 
-0:00:05.700,0:00:10.230
-To solve this task, we need to use the method
-from the lecture.
+0:00:08.880,0:00:14.410
+The start node becomes a place with one token.
 
-0:00:10.230,0:00:14.070
-This is the method from the lecture written
-in English.
+0:00:14.410,0:00:20.460
+And this action, the action A becomes a transition.
 
-0:00:14.070,0:00:22.140
-And these are the three steps, creating the
-complementary states so that the sum of the
+0:00:20.460,0:00:28.900
+And because this is a Petri net, then this
+transition can only lead to a place.
 
-0:00:22.140,0:00:30.429
-tokens in the state and its complementary
-state always results in the desired capacity.
+0:00:28.900,0:00:29.900
+It doesn't have to.
 
-0:00:30.429,0:00:39.969
-The second step is if a transition t altogether
-takes away tokens from a state s in such a
+0:00:29.900,0:00:32.520
+But if it leads to something, then it has
+to be a place.
 
-0:00:39.969,0:00:48.410
-way, then we add an edge from t to s-bar with
-the weight minus n.
+0:00:32.520,0:00:36.120
+So, we add a place.
 
-0:00:48.410,0:00:57.780
-The third step is, if a transition altogether
-adds tokens to a state s in such a way, then
+0:00:36.120,0:00:45.760
+And we can say now that this place represents
+this object node B. Again, we have an action,
 
-0:00:57.780,0:01:05.760
-insert an edge from s-bar to this transition
-with the weight n.
+0:00:45.760,0:00:52.500
+the action becomes transition C with the same
+label.
 
-0:01:05.760,0:01:10.280
-Let's apply this method to the Petri net that
-we have.
+0:00:52.500,0:00:54.329
+And again, this is a transition.
 
-0:01:10.280,0:01:13.780
-I'm going to write the capacities here.
+0:00:54.329,0:00:58.660
+So, if it's going to lead to something, then
+it has to be a place.
 
-0:01:13.780,0:01:17.610
-And let's do the first step.
+0:00:58.660,0:01:01.090
+So, we add a place.
 
-0:01:17.610,0:01:25.119
-So, for s1, let's make a complimentary state
-s1-bar.
+0:01:01.090,0:01:07.650
+Now, because this place does not correspond
+to anything here, we say that it is an auxiliary
 
-0:01:25.119,0:01:31.220
-And how many tokens are we going to put inside
-it?
+0:01:07.650,0:01:10.830
+place.
 
-0:01:31.220,0:01:38.420
-As I said before, s1 has a capacity of two
-and it already has two tokens.
+0:01:10.830,0:01:15.900
+And now, to represent this fork node, we add
+a transition.
 
-0:01:38.420,0:01:43.460
-This means we don't add any tokens here.
+0:01:15.900,0:01:21.980
+And this transition is going to give tokens
+to three different places.
 
-0:01:43.460,0:01:51.220
-The same goes for s2, it has a capacity
-of two, and it already has two tokens.
+0:01:21.980,0:01:24.870
+Because here we have three branches.
 
-0:01:51.220,0:01:55.560
-This means for s2-bar, we don't add any tokens.
+0:01:24.870,0:01:30.509
+Okay, so here we go, 1, 2, 3.
 
-0:01:55.560,0:02:01.490
-Let's make a complimentary state for s3, s3-bar.
+0:01:30.509,0:01:37.290
+And this one here in the middle is the same
+case as here, it does not correspond to anything.
 
-0:02:01.490,0:02:08.110
-And because the capacity of s3 is one and
-it doesn't have any tokens, this means we
+0:01:37.290,0:01:40.770
+Because this here, this F is an action.
 
-0:02:08.110,0:02:10.300
-add one token here.
+0:01:40.770,0:01:45.990
+So, if there's something that corresponds
+to it, that represents it, then it has to
 
-0:02:10.300,0:02:18.080
-Now, s4-bar. The capacity of s4 is three,
-and s4 doesn't have any tokens.
+0:01:45.990,0:01:47.500
+be a transition.
 
-0:02:18.080,0:02:22.380
-This means we add three tokens to s4-bar.
+0:01:47.500,0:01:55.469
+So, let's add this transition that represents
+F. And, as I said before, since this is a
 
-0:02:22.380,0:02:26.680
-Now, step two.
+0:01:55.469,0:02:02.119
+Petri net, this transition, if it's going
+to lead to something, it has to lead to a
 
-0:02:26.680,0:02:32.300
-T1 takes one token from s1.
+0:02:02.119,0:02:03.119
+place.
 
-0:02:32.300,0:02:38.110
-This means we do an edge from t1 to s1-bar
-like this.
+0:02:03.119,0:02:06.110
+So, let's add a place for now.
 
-0:02:38.110,0:02:48.860
-T2 takes a token from s2, we do an edge from
-t2 to the complement of s2 like this.
+0:02:06.110,0:02:09.380
+And let's see what this place is going to
+correspond to.
 
-0:02:48.860,0:02:52.390
-T3 takes a token from s3.
+0:02:09.380,0:02:16.569
+So, it's going to correspond to this end node
+from the activity diagram, which means this
 
-0:02:52.390,0:02:58.540
-So, we do an edge from t3 to the complement
-of s3 like this.
+0:02:16.569,0:02:23.770
+is not necessary, this is optional, you can
+remove it, and you can just say: “Okay,
 
-0:02:58.540,0:03:07.860
-T4 takes a token from s4, we do an edge from
-t4 to the complement of s4 like this.
+0:02:23.770,0:02:30.250
+this transition, F, just consumes the token
+from this place.”
 
-0:03:07.860,0:03:11.830
-T5 takes a token from s4.
+0:02:30.250,0:02:31.250
+And that's it.
 
-0:03:11.830,0:03:21.250
-So, we do an edge from t5 to the complement
-of s4 like this.
+0:02:31.250,0:02:32.770
+This is the end, it's a dead end.
 
-0:03:21.250,0:03:23.890
-Now step three.
+0:02:32.770,0:02:36.380
+So, this is an optional place.
 
-0:03:23.890,0:03:28.720
-T1 gives a token to s3.
+0:02:36.380,0:02:40.459
+Now, let's do the left branch.
 
-0:03:28.720,0:03:35.090
-This means it should take a token from the
-complement of s3 like this.
+0:02:40.459,0:02:42.450
+And we have a place here already.
 
-0:03:35.090,0:03:39.189
-T2 gives a token to s3.
+0:02:42.450,0:02:47.380
+So, this place corresponds to this decision
+node.
 
-0:03:39.189,0:03:42.830
-This means it should take a token from the
-complement of s3.
+0:02:47.380,0:02:54.659
+For the Action D, we add a transition D. And
+for the action E, we add the transition E.
 
-0:03:42.830,0:03:46.659
-T3 gives a token to s4.
+0:02:54.659,0:02:59.010
+And of course, they have to lead to a place.
 
-0:03:46.659,0:03:51.220
-This means it should take a token from the
-complement of s4.
+0:02:59.010,0:03:02.610
+So, we add a place here.
 
-0:03:51.220,0:03:55.730
-T4 gives a token to s1.
+0:03:02.610,0:03:08.900
+And now we can say that this place corresponds
+to this node and this node is a merge node.
 
-0:03:55.730,0:04:00.480
-This means it should take a token from the
-complement of s1.
+0:03:08.900,0:03:12.610
+And from a place we can go only to a transition.
 
-0:04:00.480,0:04:05.019
-T5 gives a token to s2.
+0:03:12.610,0:03:19.310
+And this transition is probably going to represent
+this join node.
 
-0:04:05.019,0:04:11.420
-This means it should take a token from the
-complement of s2.
+0:03:19.310,0:03:24.670
+So, now I'm going to add a place after this
+transition.
 
-0:04:11.420,0:04:12.829
-And we are done.
+0:03:24.670,0:03:31.440
+And this place is going to represent the end
+node.
 
-0:04:12.829,0:04:15.349
-So now we can remove the capacities.
+0:03:31.440,0:03:33.520
+Now let's do the right branch.
 
-0:04:15.349,0:04:21.579
-The capacities here we don't need them anymore
-because this Petri net is now equivalent to
+0:03:33.520,0:03:41.970
+So, this place can correspond to this merge
+node.
 
-0:04:21.579,0:04:26.440
-the original Petri net that we had which have
-capacities.
+0:03:41.970,0:03:52.580
+Now, I want to go from this place back to this
+place somehow to represent this arrow here.
+
+0:03:52.580,0:03:53.780
+And this is not going to work.
+
+0:03:53.780,0:03:58.250
+If I just do an arrow here, because this is
+a place and this is a place, we need a transition
+
+0:03:58.250,0:03:59.660
+in between.
+
+0:03:59.660,0:04:05.879
+So, we simply add a transition and we call
+it an auxiliary transition.
+
+0:04:05.879,0:04:09.209
+And now, I can go from this place to this
+transition.
+
+0:04:09.209,0:04:18.380
+And this will show you that this transition
+is really representing this joining node.
+
+0:04:18.380,0:04:20.670
+And now, we are done.
+
+0:04:20.670,0:04:28.320
+But as I said before, this place represents
+this node and it's optional.
+
+0:04:28.320,0:04:33.379
+This two represents this end node, and it's
+also optional.
