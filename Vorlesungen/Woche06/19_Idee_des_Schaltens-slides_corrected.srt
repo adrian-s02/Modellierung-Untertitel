@@ -111,7 +111,7 @@ could be no tokens anywhere, as in this case.
 
 00:01:52,380 --> 00:01:56,670
 That makes then in
-each case a system condition.
+each case a system state.
 
 00:01:56,670 --> 00:02:02,670
 So whether there are no tokens at all
@@ -334,7 +334,7 @@ of a transition designed in this way.
 
 00:05:42,900 --> 00:05:45,990
 Of course, if the constellation
-is different, then it is analog.
+is different, then it is analogous.
 
 00:05:51,090 --> 00:05:57,300
 And exactly this change, the removal of
@@ -498,7 +498,7 @@ a token from this place.
 But there are no tokens there.
 
 00:08:34,770 --> 00:08:35,580
-This space is empty.
+This place is empty.
 
 00:08:35,580 --> 00:08:37,140
 Then this transition can't fire.
@@ -566,7 +566,7 @@ token on the only precondition place.
 
 00:09:35,340 --> 00:09:38,190
 So this transition could fire
-now, it is active now.
+now, it is activated now.
 
 00:09:38,190 --> 00:09:40,880
 It's ready to fire now.
@@ -591,7 +591,7 @@ What could happen now?
 
 00:09:55,050 --> 00:10:01,350
 For example, now this transition could
-fire because it is justified by this.
+fire because it is activated by this.
 
 00:10:01,350 --> 00:10:04,080
 We could also have imagined that
@@ -679,7 +679,7 @@ and then it doesn't go any further.
 
 00:11:23,300 --> 00:11:36,620
 We can't do another step here, because
-none of the transitions here are enabled.
+none of the transitions here are activated.
 
 00:11:36,620 --> 00:11:39,380
 That means, in that case, we would

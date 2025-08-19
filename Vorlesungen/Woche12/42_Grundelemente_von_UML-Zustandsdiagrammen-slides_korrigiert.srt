@@ -180,7 +180,7 @@ mit dieser Art Darstellung notiert.
 
 00:03:16,770 --> 00:03:20,460
 Das Flussende in Entsprechung zu
-Aktivitätsdiagrammen gibt es nicht,
+Aktivitätsdiagrammen gibt es in UML-Zustandsdiagrammen nicht,
 
 00:03:20,460 --> 00:03:23,850
 aber diese Art, den Endzustand zu bezeichnen.
@@ -226,7 +226,7 @@ ein System modellieren wollen,
 das gar nicht terminieren soll.
 
 00:04:04,470 --> 00:04:06,540
-Es soll immer weiterlaufen und
+Die Uhr soll immer weiterlaufen und
 nicht irgendwo stehen bleiben.
 
 00:04:06,540 --> 00:04:08,370
@@ -448,7 +448,7 @@ zu welchem Zeitpunkt dieser Effekt eintreten soll.
 
 00:08:03,260 --> 00:08:07,899
 Nämlich eben genau dieses: beim Eintritt,
-beim Verweilen, während des Verlassens.
+während des Verweilens, beim Verlassen.
 
 00:08:07,899 --> 00:08:12,080
 Das heißt, der Trigger kann unter
@@ -1123,7 +1123,7 @@ zwischen "an" und "aus" zu wechseln.
 
 00:21:05,770 --> 00:21:11,080
 Der Vorteil hier ist: wir können, was wir für die
-Zwitzählung gemacht haben, einfach weiter verwenden,
+Stundenzählung gemacht haben, einfach weiter verwenden,
 
 00:21:11,080 --> 00:21:17,710
 und diese Alarm-Komponente als

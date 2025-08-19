@@ -52,21 +52,21 @@ For example, sources and
 sinks were used: Transitions that
 
 00:01:00,930 --> 00:01:05,430
-have no pre- or post-weight points.
+have no pre- or post-weight places.
 
 00:01:05,430 --> 00:01:10,290
-Or we saw snares with a specific purpose,
+Or we saw self-loops with a specific purpose,
 
 00:01:10,290 --> 00:01:15,660
 namely to guard
-certain points or transitions.
+certain places or transitions.
 
 00:01:16,320 --> 00:01:20,130
-So guard points, with which you can make
+So, guard places, with which you can make
 
 00:01:20,130 --> 00:01:24,600
 sure that certain transitions are
-only fireable under certain constellation.
+only fireable under certain conditions.
 
 00:01:24,600 --> 00:01:26,280
 You could just look back at that example.
@@ -132,29 +132,29 @@ applicable in various situations.
 
 00:02:31,750 --> 00:02:35,470
 We somehow consider at least two
-actors (in the case times exactly two
+actors (in this case exactly two
 
 00:02:35,470 --> 00:02:38,110
-actors), each having a critical range.
+actors), each having a critical region.
 
 00:02:38,110 --> 00:02:40,870
-This somehow means an execution area,
+This somehow means an execution region,
 
 00:02:40,870 --> 00:02:47,290
-an action area, which they
-each want to enter secured alone.
+an action region, which they
+each want to enter exclusively.
 
 00:02:47,290 --> 00:02:49,300
-In this sense, the
-"critical" should be that
+In this sense, it is
+"critical" because
 
 00:02:49,300 --> 00:02:51,490
 not both actors should be in
-the critical area at the same time.
+the critical region at the same time.
 
 00:02:51,490 --> 00:02:58,540
-So it is to be prevented that the actors
-come at the same time into their respective area.
+So it must be prevented that the actors
+enter their respective regions at the same time.
 
 00:02:59,290 --> 00:03:02,080
 Because they could obstruct
@@ -169,7 +169,7 @@ So let's imagine that the two actors
 are programs working on the hard disk.
 
 00:03:09,460 --> 00:03:13,300
-The critical area could be writing to
+The critical region could be writing to
 a certain file, and we don't want both
 
 00:03:13,300 --> 00:03:17,050
@@ -178,7 +178,7 @@ the same file at the same time.
 
 00:03:17,050 --> 00:03:21,310
 Therefore, there should always be at
-most one actor in this critical area.
+most one actor in this critical region.
 
 00:03:21,310 --> 00:03:26,710
 How can we think of
@@ -212,10 +212,10 @@ Petri net, in which something goes in, something
 comes out (and what happens in here doesn't matter).
 
 00:03:54,580 --> 00:03:56,110
-It doesn't have to be exactly one spot.
+It doesn't have to be exactly one place.
 
 00:03:56,110 --> 00:03:58,660
-That would be the non-critical area.
+That would be the non-critical region.
 
 00:03:58,660 --> 00:04:01,750
 So somehow a Petri
@@ -223,31 +223,30 @@ net part, where any actions
 
 00:04:01,750 --> 00:04:04,270
 can be executed, which have nothing
-to do with the critical area.
+to do with the critical region.
 
 00:04:05,290 --> 00:04:07,150
 The same is true for actor 2.
 
 00:04:07,150 --> 00:04:08,290
-So that's non-critical area
+So that's non-critical region
 
 00:04:08,290 --> 00:04:11,770
-1 and non-critical area
+1 and non-critical region
 2 for the two actors.
 
 00:04:11,770 --> 00:04:16,060
 And then there's also a
-critical area for each actor, and
+critical region for each actor, and
 
 00:04:16,990 --> 00:04:18,580
 let that be K1, K2 for those two actors.
 
 00:04:18,580 --> 00:04:22,420
-And the idea is that that's the
-area that should somehow be prevented from both
+And the idea is to prevent both actors from
 
 00:04:22,420 --> 00:04:23,590
-being there at the same time.
+being in this region at the same time.
 
 00:04:23,590 --> 00:04:24,280
 So it should be prevented that
@@ -258,19 +257,19 @@ token is here and a token is here.
 
 00:04:28,630 --> 00:04:33,250
 Because that would mean that both actor 1
-and actor 2 are in their critical area.
+and actor 2 are in their critical region.
 
 00:04:33,250 --> 00:04:39,040
 So if we consider these actions k1, k2,
 nk1, nk2 as "actor 1 enters its critical
 
 00:04:39,040 --> 00:04:41,980
-area", "actor 2 enters its
-critical area" and analogously respectively for
+region", "actor 2 enters its
+critical region" and analogously for
 
 00:04:41,980 --> 00:04:45,670
-leaving the critical area and
-entering the non-critical area, then certain
+leaving the critical region and
+entering the non-critical region, then certain
 
 00:04:45,670 --> 00:04:51,130
 sequences of actions should not be
@@ -278,11 +277,11 @@ possible for the common overall system.
 
 00:04:51,130 --> 00:04:57,370
 So it should not be possible: k1, k2,
-i.e. actor 1 enters the critical area, and before
+i.e. actor 1 enters the critical region, and before
 
 00:04:57,370 --> 00:05:01,600
-actor 1 has left the critical area,
-actor 2 also enters its critical area.
+actor 1 has left the critical region,
+actor 2 also enters its critical region.
 
 00:05:01,600 --> 00:05:04,540
 Because if that then meant
@@ -302,7 +301,7 @@ in a certain part of the water gate at the same time.
 
 00:05:16,540 --> 00:05:18,490
 That ultimately has to do
-with critical area as well.
+with critical region as well.
 
 00:05:21,490 --> 00:05:22,210
 How could this be solved?
@@ -334,7 +333,7 @@ It is possible to synchronize via an
 extra place, which is called a mutex place.
 
 00:05:51,940 --> 00:05:55,750
-This is an auxiliary unit, which is
+This is an auxiliary place, which is
 often called mutex because of "mutual exclusion".
 
 00:05:55,750 --> 00:05:59,050
@@ -349,15 +348,15 @@ And this token is always needed
 
 00:06:03,460 --> 00:06:06,100
 when one of the two
-actors enters its critical area.
+actors enters its critical region.
 
 00:06:06,100 --> 00:06:09,640
 So, for example, if actor 1
-wants to enter his critical area, then,
+wants to enter his critical region, then,
 
 00:06:09,640 --> 00:06:12,520
 of course, somehow the
-non-critical area has to be
+non-critical region has to be
 
 00:06:12,520 --> 00:06:19,210
 left, but in addition, this mutex
@@ -365,11 +364,11 @@ place has to be occupied with a
 
 00:06:19,210 --> 00:06:23,650
 token, which actor 1 then consumes
-in order to enter his critical area.
+in order to enter his critical region.
 
 00:06:23,650 --> 00:06:26,260
-That is, to join the
-critical area (i.e., to bring the
+That is, to enter the
+critical region (i.e., to bring the
 
 00:06:26,260 --> 00:06:29,290
 token from here to here),
@@ -380,11 +379,11 @@ Which also means that then, for
 example, directly afterwards the second actor
 
 00:06:33,730 --> 00:06:35,800
-cannot enter its critical area.
+cannot enter its critical region.
 
 00:06:35,800 --> 00:06:40,480
 Because that would mean executing k2, but
-that also depends on this mutex location.
+that also depends on this mutex place.
 
 00:06:41,680 --> 00:06:43,150
 Let's assume that k1 fires.
@@ -395,18 +394,18 @@ would disappear, here would be a
 
 00:06:45,370 --> 00:06:51,670
 token, actor 1 would work
-through his critical area and would
+through his critical region and would
 
 00:06:51,670 --> 00:06:55,720
 not release the token for the
-mutex until the critical area is left.
+mutex until the critical region is left.
 
 00:06:55,720 --> 00:07:00,070
 So when actor 1 crosses
-back over into the non-critical area,
+back over into the non-critical region,
 
 00:07:00,070 --> 00:07:01,150
-that is, leaves its critical area.
+that is, leaves its critical region.
 
 00:07:01,150 --> 00:07:04,630
 Then this token would be returned and
@@ -416,7 +415,7 @@ could be reused by k1 or by k2.
 
 00:07:10,660 --> 00:07:14,740
 Intuitively, this synchronization across this
-common point ensures that both
+common place ensures that both
 
 00:07:14,740 --> 00:07:18,070
 actors cannot be in the
@@ -436,11 +435,11 @@ just not activated concurrently.
 
 00:07:33,580 --> 00:07:36,730
 But we have a conflict
-exactly over this position here.
+exactly over this place here.
 
 00:07:36,730 --> 00:07:41,860
 This prevents them both
-from entering their critical area.
+from entering their critical region.
 
 00:07:41,860 --> 00:07:46,960
 That would be the
@@ -473,14 +472,14 @@ we take the place order NK1,
 
 00:08:16,080 --> 00:08:25,380
 K1, K2, NK2 (so basically the way the
-places were plotted here from left to right as
+places were plotted here from left to right),
 
 00:08:25,380 --> 00:08:28,680
-well), then we know
+then we know
 the start marking is (1,0,1,0,1).
 
 00:08:29,610 --> 00:08:30,510
-We can see that about here.
+We can see that here.
 
 00:08:30,510 --> 00:08:34,200
 And then, in each case, it is
@@ -495,20 +494,20 @@ there are no sequences of the kind k1, k2.
 
 00:08:45,660 --> 00:08:49,470
 If k1 was executed, then before
-k2 can be executed, always at
+k2 can be executed, nk1 must
 
 00:08:49,470 --> 00:08:52,680
-least once more nk1 must be executed.
+be executed at least once more.
 
 00:08:52,680 --> 00:08:54,300
 That is one observation.
 
 00:08:54,300 --> 00:08:59,250
 And the other observation is indeed
-that among the markings reachable here at
+that among all the reachable markings,
 
 00:08:59,250 --> 00:09:03,570
-all, there is none where both
+there is none where both
 K1 and K2 contain a 1.
 
 00:09:05,040 --> 00:09:07,740
@@ -540,7 +539,7 @@ helped us in the past?
 
 00:09:31,380 --> 00:09:37,680
 And well, actually also in the example
-before in the context of the Feeding
+before in the context of the Dining
 
 00:09:37,680 --> 00:09:40,800
 Philosophers one can make
@@ -566,7 +565,7 @@ I discuss this now
 only for the simplest case.
 
 00:10:01,020 --> 00:10:03,210
-We look at the feeding philosophers.
+We look at the Dining Philosophers.
 
 00:10:03,210 --> 00:10:06,390
 We just did that recently, so
@@ -639,7 +638,7 @@ could help us there.
 So we can try to introduce an extra mutex
 
 00:11:11,390 --> 00:11:17,180
-site that somehow prevents, for example,
+place that somehow prevents, for example,
 P1 and P2 from both grabbing exactly
 
 00:11:17,180 --> 00:11:19,670
@@ -647,7 +646,7 @@ one fork and then not being
 able to get the second fork.
 
 00:11:22,160 --> 00:11:23,330
-Maybe as a quarrel,
+Maybe with a twist,
 you can actually solve the
 
 00:11:25,790 --> 00:11:30,911
@@ -692,8 +691,8 @@ This is expressed here in the
 Petri net by simply bending two arrows.
 
 00:12:06,350 --> 00:12:13,280
-In each case the arrows, where the philosopher
-1 takes access to the forks 1 and 2.
+In each case the arrows, where philosopher
+1 accesses the forks 1 and 2.
 
 00:12:13,280 --> 00:12:16,850
 They were bent exactly in such a
@@ -726,7 +725,7 @@ the one grabbed first for both of them.
 
 00:12:44,140 --> 00:12:47,860
 And that ultimately makes it
-a synchronization point or mutex point.
+a synchronization point or mutex place.
 
 00:12:47,860 --> 00:12:50,740
 How can we convince ourselves of this?
@@ -782,7 +781,7 @@ And they both access F1.
 
 00:13:56,470 --> 00:14:01,630
 That is, if, for example, philosopher 1
-reaches for his left fork (after F1),
+reaches for his left fork (for F1),
 
 00:14:01,630 --> 00:14:05,650
 then this very token
@@ -843,7 +842,7 @@ That is, here we
 prevent deadlock by synchronization, by
 
 00:15:04,690 --> 00:15:08,380
-using this mutex site ultimately.
+using this mutex place ultimately.
 
 00:15:08,380 --> 00:15:16,630
 This is a very typical
